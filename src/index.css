@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ff6600;
+  --primary-dark: #cc5200;
+  --primary-light: #ff8533;
+  --accent: #ff944d;
+  --background: #000000;
+  --background-light: #1a1a1a;
+  --background-lighter: #262626;
+}
+
+body {
+  @apply bg-black;
+}
+
+.glass-effect {
+  @apply bg-[#1a1a1a]/50 backdrop-blur-lg border border-[#333333];
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#ff6600] to-[#ff944d];
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-[#000000] via-[#1a1a1a] to-[#1a1a1a];
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#ff6600]/20;
+}
+
+/* Progress bars */
+.progress-bar {
+  @apply bg-gradient-to-r from-[#ff6600] to-[#ff944d];
+}
+
+/* Progress bar background */
+.progress-bg {
+  @apply bg-gray-800;
+}
+
+/* Progress bar fill */
+.progress-fill {
+  @apply bg-gradient-to-r from-[#ff6600] to-[#ff944d] transition-all duration-300;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-[#ff6600] to-[#ff944d] text-white;
+}
+
+.btn-secondary {
+  @apply bg-[#1a1a1a] text-[#ff6600] border border-[#ff6600];
+}
+
+/* Card effects */
+.card-glow {
+  @apply hover:shadow-[#ff6600]/20;
+}
+
+/* Input fields */
+input, textarea, select {
+  @apply bg-[#1a1a1a] border-[#333333] focus:border-[#ff6600] focus:ring-[#ff6600];
+}
+
+/* Tables */
+table {
+  @apply border-[#333333];
+}
+
+th {
+  @apply bg-[#1a1a1a] text-[#ff6600];
+}
+
+tr {
+  @apply border-[#333333] hover:bg-[#1a1a1a];
+}
